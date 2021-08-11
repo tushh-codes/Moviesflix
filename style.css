@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'poppins', sans-serif;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h2 {
+  color: #fff;
+  margin: 2rem 2rem 1rem 1rem;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  font-family: inherit;
+}
+header {
+  background-color: #373b69;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin-left: 36vw;
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+header form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 2px solid #302b63;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #fff;
+  width: 300px;
+}
+
+.search::placeholder {
+  color: #7378c5;
+}
+
+.search:focus {
+  outline: none;
+  background-color: #22254b;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 300px;
+  background-color: #373b69;
+  border-radius: 3px;
+  box-shadow: 0 8px 9px rgba(0, 0, 0, 0.6);
+  margin: 1rem;
+  margin-left: 2rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  color: #eee;
+  letter-spacing: 1px;
+  align-items: center;
+}
+
+.movie-info h3 {
+  margin: 0;
+}
+
+.movie-info span {
+  background-color: #22254b;
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+}
+
+.movie-info span.green {
+  color: rgb(77, 248, 77);
+}
+.movie-info span.orange {
+  color: orange;
+}
+.movie-info span.red {
+  color: rgb(255, 56, 56);
+}
+
+.overview {
+  position: absolute;
+  background-color: rgb(199, 17, 63);
+  color: white;
+  padding: 2rem;
+  max-height: 100%;
+  overflow: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+.overview h4 {
+  margin-top: 0;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+.icon {
+  font-size: 2.1rem;
+  color: #fff;
+  background-color: #373b69;
+  border: none;
+  padding-left: 10px;
+  padding-top: 5px;
+  cursor: pointer;
+}
