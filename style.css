@@ -149,3 +149,11 @@ main {
   padding-top: 5px;
   cursor: pointer;
 }
+
+.footer {
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: #373b69;
+  color: rgb(185, 185, 185);
+}
