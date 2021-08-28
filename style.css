@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   background: #0f0c29; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -84,6 +84,11 @@ main {
   position: relative;
   cursor: pointer;
   margin-top: 3rem;
+  transition: transform 700ms;
+}
+
+.movie:hover {
+  transform: scale(1.09);
 }
 .movie img {
   width: 100%;
